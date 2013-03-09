@@ -1,0 +1,19 @@
+   <script type="text/template" class="footer-navbar">
+		<div data-role="navbar">
+ 			<ul>
+           		<% collection.each( function( page ){ %>
+               	 	<li>
+						<% var buttonId = 'navbar_btn_' + page.get('id'); %>
+ 						<a data-pageId='<%= page.get('id') %>' id='<%= buttonId %>' class='navpanel-item' > <%= page.get('name') %> </a>
+                	</li>
+            	<% }); %>
+        	</ul>
+		</div>
+   </script>	
+   
+   <script type="text/template" class="buttons_template">
+		<a id="page1_btn" class="pageButtons" data-role="button" href="#">Page 1</a>
+		<a id="page2_btn" class="pageButtons" data-role="button" href="#">Page 2</a>
+		<a id="page3_btn" class="pageButtons" data-role="button" href="#">Page 3</a>
+   </script>   
+   
