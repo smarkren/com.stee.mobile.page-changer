@@ -1,0 +1,53 @@
+<!doctype html>
+<html class="no-js ui-mobile-rendering" lang="en">
+<head>
+      <title>Page Nav test 1</title>
+      <meta name="description" content="">
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <link rel="stylesheet" href="./css/lib/jquery.mobile.css" />
+      <script src="./javascript/libs/require.js" data-main="./javascript/main/mobile"></script>
+      
+</head>
+
+<body>
+
+<div id="dialog" data-role="dialog" data-title="dialog1">
+  
+      <div data-role="header">
+            <h1>Page 1</h1>
+      </div><!-- /header -->
+  
+<div data-role="header">
+			<h1>Dialog 1</h1>
+		</div>
+		<!-- /header -->
+
+		<div data-role="content">
+			<script type="text/javascript">
+				initializeDialog1();
+			</script>
+			<h2>Dialog 1</h2>
+			<a data-role="button" id="open1">Open Tab 1</a> 
+			<a data-role="button" id="close1">Close</a>
+		</div>
+		<!-- /content -->
+
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="index.jsp?folder=nav1&page=page1"
+						class="navpanel-item">Page 1</a></li>
+					<li><a href="index.jsp?folder=nav1&page=page2"
+						class="navpanel-item">Page 2</a></li>
+					<li><a href="index.jsp?folder=nav1&page=page3"
+						class="navpanel-item">Page 3</a></li>
+				</ul>
+			</div>
+		</div>
+
+</div>
+
+</body>
+</html>
